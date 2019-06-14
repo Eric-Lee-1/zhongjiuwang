@@ -1,0 +1,410 @@
+@import "./base.scss";
+$COLOR_HUI: #666666;
+$COLOR_RED: #e3393c;
+$COLOR_BLACK: #3e3a39;
+$COLOR_WHITE: #ffffff;
+$COLOR_HUI2: #3d4851;
+a:hover {
+  color: $COLOR_HUI;
+}
+header {
+  height: 30px;
+  background: #f5f4f4;
+  font-size: 12px;
+  .head_1 {
+    width: 240px;
+    height: 100%;
+    line-height: 30px;
+    span {
+      color: $COLOR_HUI;
+      em {
+        color: $COLOR_BLACK;
+        margin-left: 5px;
+      }
+      a {
+        color: $COLOR_RED;
+        margin-left: 10px;
+      }
+    }
+  }
+  .head_2 {
+    width: 150px;
+    height: 100%;
+    line-height: 30px;
+    div:first-of-type a {
+      padding: 0 10px;
+      border-right: 1px solid $COLOR_HUI;
+    }
+    div:last-of-type {
+      padding: 0 10px;
+    }
+  }
+  .head_3 {
+    height: 100%;
+    line-height: 30px;
+    ul {
+      li {
+        padding: 0 10px;
+        position: relative;
+        .lv2 {
+          display: none;
+          width: 100px;
+          background: $COLOR_WHITE;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          padding: 0 10px;
+          text-align: center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          p {
+            color: $COLOR_RED;
+          }
+        }
+        &:hover {
+          background: $COLOR_WHITE;
+        }
+        &:hover .lv2 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+main {
+  background: $COLOR_WHITE;
+
+  .top {
+    height: 120px;
+    background: $COLOR_WHITE;
+    h1 {
+      margin: 30px 5px;
+    }
+    .gif {
+      margin: 30px 20px;
+    }
+    .search {
+      margin-top: 30px;
+      width: 590px;
+      height: 66px;
+      font-size: 12px;
+      .search_to {
+        width: 586px;
+        height: 34px;
+        line-height: 34px;
+        border: 2px solid $COLOR_RED;
+        ul {
+          width: 60px;
+          text-align: center;
+          position: relative;
+          li {
+            width: 100%;
+            height: 34px;
+          }
+          li:last-of-type {
+            display: none;
+          }
+        }
+        img {
+          position: absolute;
+          left: 50px;
+          top: 7px;
+        }
+        input {
+          margin-left: 20px;
+          border: none;
+          height: 34px;
+        }
+        div {
+          width: 70px;
+          height: 34px;
+          background: $COLOR_RED;
+          text-align: center;
+          color: $COLOR_WHITE;
+        }
+      }
+      .hot-search {
+        margin-top: 5px;
+        a {
+          margin-right: 5px;
+          &:hover {
+            color: $COLOR_RED;
+          }
+        }
+        a:first-of-type {
+          color: $COLOR_RED;
+        }
+      }
+    }
+    .top-pic {
+      margin-top: 20px;
+    }
+  }
+
+  nav {
+    width: 100%;
+    overflow: hidden;
+    ul .top1 {
+      position: relative;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      z-index: 10;
+      a {
+        color: $COLOR_BLACK;
+        &:hover {
+          color: $COLOR_RED;
+        }
+      }
+      .top2 {
+        position: absolute;
+        top: 37px;
+        img {
+          position: absolute;
+          top: 22px;
+          left: 20px;
+          z-index: 11;
+          pointer-events: none;
+        }
+        .top3 {
+          width: 200px;
+          height: 80px;
+          background: $COLOR_HUI2;
+          border-bottom: 1px solid #3e3a39;
+          font-size: 14px;
+          position: relative;
+          a {
+            color: $COLOR_WHITE;
+          }
+          .top3-p1 {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-weight: bold;
+          }
+          .menu1 {
+            position: absolute;
+            left: 24px;
+            top: 50px;
+            li {
+              margin-right: 5px;
+            }
+            .menu2 {
+              display: none;
+              width: 800px;
+              height: 500px;
+              background: $COLOR_WHITE;
+              position: absolute;
+              left: 176px;
+              top: -50px;
+              .menu2-left {
+                width: 600px;
+                height: 500px;
+                color: $COLOR_HUI2;
+                padding-left: 30px;
+                ul {
+                  height: 150px;
+                  width: 500px;
+                  p {
+                    width: 500px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: left;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid $COLOR_HUI;
+                  }
+                  li {
+                    width: 90px;
+                    line-height: 20px;
+                    a {
+                      color: $COLOR_HUI;
+                      font-size: 12px;
+                      &:hover {
+                        color: $COLOR_RED;
+                      }
+                    }
+                  }
+                }
+              }
+              .menu-right {
+                width: 200px;
+                height: 100%;
+                background: #cccccc;
+                position: absolute;
+                top: 0;
+                left: 600px;
+                text-align: center;
+                img {
+                  width: 200px;
+                  left: 0;
+                  top: 30px;
+                }
+              }
+            }
+          }
+          &:hover {
+            background: #334455;
+            .menu2 {
+              display: block;
+            }
+          }
+        }
+        .top3:nth-of-type(1) .menu2 {
+        }
+        .top3:nth-of-type(2) .menu2 {
+          top: -130px;
+        }
+        .top3:nth-of-type(3) .menu2 {
+          top: -210px;
+        }
+        .top3:nth-of-type(4) .menu2 {
+          top: -290px;
+        }
+        .top3:nth-of-type(5) .menu2 {
+          top: -370px;
+        }
+        .top3:nth-of-type(6) .menu2 {
+          top: -450px;
+        }
+      }
+    }
+    ul .right_1 {
+      position: absolute;
+      right: 40px;
+      top: 185px;
+      width: 192px;
+      z-index: 20;
+      // border: 2px solid $COLOR_HUI;
+      &:hover {
+        right: 45px;
+        transition: 0.5s;
+      }
+    }
+    ul .right_2 {
+      position: absolute;
+      right: 40px;
+      top: 430px;
+      width: 192px;
+      z-index: 20;
+      // border: 2px solid $COLOR_HUI;
+      &:hover {
+        right: 45px;
+        transition: 0.5s;
+      }
+    }
+
+    ul .top1:nth-of-type(1) {
+      width: 200px;
+    }
+    ul .top1:nth-of-type(2) a {
+      color: $COLOR_RED;
+    }
+    .slider {
+      width: 100%;
+      height: 480px;
+      position: relative;
+      padding-top: 36px;
+    }
+
+    .slider .list .item {
+      position: absolute;
+      opacity: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.5s;
+    }
+
+    .slider .list .item.current {
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .slider .pagination {
+      position: absolute;
+      left: 45%;
+      bottom: 20px;
+      z-index: 2;
+    }
+
+    .slider .pagination li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      margin-left: 10px;
+      background-color: white;
+      opacity: 0.5;
+      cursor: pointer;
+    }
+
+    .slider .pagination li.focus {
+      opacity: 1;
+    }
+  }
+}
+
+aside {
+  width: 40px;
+  height: 660px;
+  background: #2a2a2e;
+  color: #e8e8e8;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  padding-top: 100px;
+  li {
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    position: relative;
+    margin-bottom: 10px;
+    a {
+      color: #e8e8e8;
+      .aside-left {
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        left: -80px;
+        background: #2a2a2e;
+        font-size: 12px;
+        text-align: center;
+        display: none;
+      }
+    }
+    &:hover {
+      background: $COLOR_RED;
+      .aside-left {
+        top: 0;
+        display: block;
+      }
+    }
+  }
+  li:nth-of-type(2) {
+    width: 20px;
+    height: 150px;
+    a {
+      display: block;
+      width: 20px;
+      height: 120px;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      border-top: 1px solid $COLOR_HUI;
+      border-bottom: 1px solid $COLOR_HUI;
+      padding-top: 30px;
+      h4 {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: $COLOR_RED;
+      }
+    }
+  }
+}

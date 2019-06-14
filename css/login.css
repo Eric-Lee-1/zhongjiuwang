@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+input,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+header,
+nav,
+main,
+footer,
+section,
+article,
+figure,
+figcaption,
+aside {
+  display: block;
+}
+
+body {
+  background: #ccc;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #1f1f1f;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*===================css of public==================*/
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.w {
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.c {
+  height: 100%;
+  width: 1186px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../iconfont/iconfont.eot");
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff2") format("woff2"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype"), url("../iconfont/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #f2f2f2;
+}
+
+header ul {
+  height: 100%;
+  padding-top: 24px;
+}
+
+header ul a li img {
+  height: 38px;
+  width: 290px;
+}
+
+header ul > li {
+  margin: 0 20px;
+  height: 36px;
+  line-height: 36px;
+}
+
+main {
+  width: 100%;
+  height: 470px;
+  background: #e33938;
+}
+
+main .w {
+  height: 100%;
+}
+
+main .w > img {
+  padding-top: 60px;
+}
+
+main .w .loginto {
+  height: 430px;
+  width: 344px;
+  background: white;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+main .w .loginto .top {
+  height: 54px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .w .loginto .top p {
+  width: 172px;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .w .loginto .top p:first-of-type {
+  color: #e33938;
+  font-weight: bolder;
+}
+
+main .w .loginto .Ewm {
+  /* display: none;   */
+  height: 320px;
+  width: 100%;
+}
+
+main .w .loginto .Ewm li:first-of-type {
+  height: 159px;
+  width: 159px;
+  border: 1px solid #f1f1f1;
+  margin: 20px auto;
+}
+
+main .w .loginto .Ewm li:first-of-type img {
+  height: 149px;
+  margin: 5px;
+}
+
+main .w .loginto .Ewm li:nth-of-type(2) {
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 85px;
+}
+
+main .w .loginto .Ewm li:nth-of-type(2) span {
+  margin-left: 30px;
+}
+
+main .w .loginto .Ewm li:last-of-type {
+  width: 132px;
+  height: 25px;
+  margin: 20px 56px;
+}
+
+main .w .loginto .account {
+  display: none;
+  height: 320px;
+  width: 100%;
+}
+
+main .w .loginto .account div {
+  display: none;
+  width: 280px;
+  height: 18px;
+  border: 1px solid #eeaaaa;
+  background: #eecccc;
+  border-radius: 3px;
+  margin: 25px;
+  font-size: 12px;
+  color: #e33938;
+}
+
+main .w .loginto .account div p {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  background: #e33938;
+  border-radius: 9px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #e9e9e9;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+main .w .loginto .account li {
+  width: 280px;
+  height: 38px;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  margin: 25px;
+  position: relative;
+}
+
+main .w .loginto .account li span {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  background: #fafafa;
+  border-right: 1px solid #e9e9e9;
+}
+
+main .w .loginto .account li span img {
+  margin: 11px;
+  height: 16px;
+  width: 16px;
+}
+
+main .w .loginto .account li input {
+  border: none;
+  position: absolute;
+  left: 50px;
+  top: 10px;
+  font-size: 16px;
+}
+
+main .w .loginto .account li:nth-of-type(3) {
+  width: 290px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  margin: 20px;
+  background: #e33938;
+  color: white;
+  cursor: pointer;
+}
+
+main .w .loginto .account li:last-of-type {
+  margin: 20px;
+  width: 290px;
+  height: 38px;
+  border: none;
+}
+
+main .w .loginto .account li:last-of-type a {
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+  color: #1f1f1f;
+}
+
+main .w .loginto .down {
+  height: 46px;
+  width: 260px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+main .w .loginto .down li {
+  height: 12px;
+  line-height: 12px;
+  width: 30px;
+  padding-left: 30px;
+  border-right: 1px solid #aaaaaa;
+  position: relative;
+}
+
+main .w .loginto .down li a {
+  color: #e33938;
+}
+
+main .w .loginto .down li img {
+  width: 16px;
+  height: 16px;
+  float: left;
+  position: absolute;
+  top: -2px;
+  left: 10px;
+}
+
+main .w .loginto .down li:last-of-type {
+  height: 12px;
+  width: 50px;
+  padding-left: 10px;
+  border: 0;
+}
+
+footer {
+  width: 100%;
+  height: 105px;
+  line-height: 105px;
+  text-align: center;
+  background: #f2f2f2;
+  font-size: 12px;
+}
+/*# sourceMappingURL=login.css.map */

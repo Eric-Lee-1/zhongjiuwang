@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header>
+        <ul class="w">
+            <a href="../index.html">
+                <li class="l"><img src="../imgs/login/zj.png" alt="图片加载失败"></li>
+            </a>
+            <li class="l">欢 迎 登 陆</li>
+        </ul>
+    </header>
+    <main>
+        <div class="w">
+            <img src="../imgs/login/loginBannerImg.png" alt="图片加载失败" class="l">
+            <div class="r loginto ">
+                <div class="top">
+                    <p>扫码登录</p>
+                    <p>账户登录</p>
+                </div>
+                <ul class="Ewm">
+                    <li><img src="../imgs/login/GetQR.gif" alt=""></li>
+                    <li>打开中酒网App<span>扫描二维码</span></li>
+                    <li><img src="../imgs/login/sao_2.png" alt=""></li>
+                </ul>
+                <ul class="account">
+                    <div><p>—</p><span>请输入用户名</span></div>
+                    <li>
+                        <span><img src="../imgs/login/icon-user.png" name="zjw_username" alt=""></span>
+                        <input type="text" placeholder="请输入用户名" name = "zjw_password" id="username">
+                    </li>
+                    <li>
+                        <span><img src="../imgs/login/icon-lock.png" alt=""></span>
+                        <input type="text" placeholder="请输入密码" id="password">
+                    </li>
+                    <li class="login">登录</li>
+                    <li><a href="#" class="l">短信验证码登录</a><a href="#" class="r">忘记密码</a></li>
+                </ul>
+
+                <ul class="down">
+                    <ul>
+                        <li class="l">
+                            <a href="https://graph.qq.com/oauth2.0/show?which=error&display=pc&error=100010&which=Login&display=pc&response_type=code&client_id=1106027103&redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.QQ&scope=get_user_info&state=Himall.Plugin.OAuth.QQ">
+                                <img src="../imgs/login/icon-qq.png" alt="">QQ
+                            </a>
+                        </li>
+                        <li class="l">
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=93470565&response_type=code&redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.Weibo">
+                                <img src="../imgs/login/icon-weibo.png" alt="">微博
+                            </a>
+                        </li>
+                        <li class="l">
+                            <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx45a6feedd1adfcfe&redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.WeiXin&response_type=code&scope=snsapi_login&state=hishop#wechat_redirect">
+                                <img src="../imgs/login/icon-weixin.png" alt="">微信
+                            </a>
+                        </li>
+                        <li class="l">
+                            <a href="../html/regist.html">立即注册</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Copyright&copy;2019 中酒网 版权所有
+        </p>
+    </footer>
+    <script src="../js/utiltits.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

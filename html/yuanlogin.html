@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>登录</title>
+    <link href="/Areas/Web/Content/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Areas/Mobile/Templates/Default/Content/artdialog.css">
+    <style>
+
+        /* add 20190522 */
+        .nc-container #nc_1_wrapper {
+            width: 288px !important;
+            margin-top: 16px;
+        }
+
+        .nc_scale {
+            height: 38px;
+        }
+
+        .nc-container .nc_scale span {
+            width: 38px;
+            height: 36px;
+        }
+
+        input {
+            background: transparent;
+        }
+        input{           
+            -webkit-box-shadow: 0 0 0 1000px white inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="new-2019">
+        <div class="loginLogo">
+            <a href="http://www.zhongjiu.cn/"><img width="295" height="38" src="/Images/loginLogo.png" alt="中酒网 中酒连锁"></a>
+            <p>欢迎登录</p>
+        </div>
+        <div class="bgloginBanner">
+            <div class="loginBanner" id="entry">
+                <img class="banner" src="/Areas/Web/Images/loginBannerImg.png" alt="" />
+                <div class="loginNewStyle">
+                    <div class="tab_content">
+                        <ul class="tab_tit">
+                            <li class="active">
+                                <a href="javascript:void(0)" class="sao">扫码登录</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:void(0)">账户登录</a>
+                            </li>
+                        </ul>
+                        <div class="tab_cont">
+                            <section class="">
+                                <div class="saom_login">
+                                    <p><img width="159" height="159" id="scanimg" src="/login/GetQR?t=132046874049889154"></p>
+                                    <span>打开中酒网App</span>
+                                    <span class="fr">扫描二维码</span>
+                                </div>
+                                <span><img src="/Areas/Web/Images/sao_2.png"></span>
+                            </section>
+                            <div class="tip-box icon-box">
+                                <span class="succ-icon"></span>
+                                <div class="item-fore al">
+                                    <h3>扫描成功!</h3>
+                                    <div class="ftx-03">请勿刷新本页面，按手机提示操作！</div>
+                                </div>
+                            </div>
+                            <section class="hidden">
+                                <div class="loginFrame">
+
+                                    <div id="checkCode_errorInfo" class="tips_error hidden" style="width: 276px;padding: 3px 0 3px 10px;"><img src="/Areas/Web/Images/icon-msg.png" alt="" style="margin-right: 24px;" /><span id="checkCode_error"></span></div>
+
+                                    <div class="loginMethodByCode">
+                                        <div class="inputBox">
+                                            <div class="iconBox">
+                                                <img width="16" src="/Areas/Web/Images/icon-user.png" alt="" />
+                                            </div>
+                                            <input id="loginname" type="text" name="loginname" placeholder="请输入用户名" tabindex="1" autocomplete="off" sta="2" value="" />
+                                        </div>
+                                        <div class="inputBox">
+                                            <div class="iconBox">
+                                                <img width="16" src="/Areas/Web/Images/icon-lock.png" alt="" />
+                                            </div>
+                                            <input id="password" type="password" name="password" placeholder="请输入密码" tabindex="2" autocomplete="off" sta="2" />
+                                        </div>
+                                        <!--图片验证码-->
+                                        <div class="inputBox" id="checkCodeArea" style="display:none;">
+                                            <input id="checkCodeBox" class="text text-1" name="authcode" tabindex="6" maxlength="4" style="ime-mode:disabled;width: 40%;float: left;margin: 0;text-align: center;text-indent: 0;border: 1px solid #b8c1c8;" sta="0" placeholder="验证码" type="text">
+                                            <label class="img">
+                                                <img id="checkCodeImg" src="/Login/GetCheckCode">
+                                            </label>
+                                            <label class="ftx23 hline">看不清？<br><a href="javascript:void(0)" id="checkCodeChange" class="flk13">换一张</a></label>
+                                            <label id="authcode_succeed" class="blank invisible"></label>
+                                            <label id="checkCode_error" class="error" style="display: none;"></label>
+                                        </div>
+
+                                        <div id="loginsubmit" class="btn-enter">登录</div>
+                                    </div>
+                                    <div class="loginMethodByUser">
+                                        <!--验证码登录  -->
+                                        <div>
+                                            <div class="inputBox" style="margin-top: 5px;">
+                                                <div class="iconBox">
+                                                    <img width="16" src="/Areas/Web/Images/icon-user.png" alt="" />
+                                                </div>
+                                                <input id="loginnameTwo" name="loginname" type="text" placeholder="请输入手机号码" tabindex="1" autocomplete="off" sta="2" />
+                                            </div>
+                                            <label id="loginname_succeed" class="blank invisible succeed"></label>
+                                            <label id="loginname_error" class="error" style="display:none;"></label>
+                                            <div id="pullcheckbtn" class="nc-container"></div>
+                                            <!--验证通过-->
+                                            <div id="numpass" style="display: none;">
+                                                <div class="inputBox">
+                                                    <div class="iconBox">
+                                                        <img width="16" src="/Areas/Web/Images/icon-code.png" alt="" />
+                                                    </div>
+                                                    <input id="passwordTwo" class="insertCode" type="text" name="name" placeholder="请输入验证码" tabindex="2" autocomplete="off" sta="2" />
+                                                    <span id="verificationtime">120s</span>
+                                                    
+                                                </div>
+                                                <p class="codeText">验证码已发送，2分钟内有效</p>
+                                                <div id="yesBtn" class="btn-enter"><img class="icon-right" src="/Areas/Web/Images/icon-right.png" alt="" />验证通过</div>
+                                            </div>
+                                            <div id="loginsubmit2" style="display: none;" class="btn-enter">登录</div>
+                                        </div>
+                                    </div>
+                                    <div class="tipsText">
+                                        <p class="toggleLoginBtn" style="cursor:pointer" data-status="1"></p>
+                                        <a href="/findpassword">忘记密码</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="registerNow">
+                                    <a href="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=1106027103&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.QQ&amp;scope=get_user_info&amp;state=Himall.Plugin.OAuth.QQ">
+                                        <img width="16" src="/Areas/Web/Images/icon-qq.png" alt="QQ" />
+                                        <span style="color:black">QQ</span>
+                                    </a>
+                                    <span> | </span>
+                                    <a href="https://api.weibo.com/oauth2/authorize?client_id=93470565&amp;response_type=code&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.Weibo">
+                                        <img width="16" src="/Areas/Web/Images/icon-weibo.png" alt="微博" />
+                                        <span>微博</span>
+                                    </a>
+                                    <span> | </span>
+                                    <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx45a6feedd1adfcfe&amp;redirect_uri=http%3a%2f%2fwww.zhongjiu.cn%2fLogin%2fOauthCallBack%3foauthId%3dHimall.Plugin.OAuth.WeiXin&amp;response_type=code&amp;scope=snsapi_login&amp;state=hishop#wechat_redirect">
+                                        <img width="16" src="/Areas/Web/Images/icon-weixin.png" alt="微信" />
+                                        <span>微信</span>
+                                    </a>
+                                    <span> | </span>
+                            <a href="Register" target="_blank">立即注册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w">
+        <div id="footer" style="padding-top:30px;">
+            <div class="copyright">Copyright © 2019 &nbsp;&nbsp;中酒网&nbsp;版权所有</div>
+        </div>
+    </div>
+    <script src="/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="/Scripts/jquery.cookie.js"></script>
+    <script src="/Scripts/CommonJS.js"></script>
+    <script src="/Areas/Web/Scripts/login.js?t=20190611084324"></script>
+
+    <script src="/Scripts/jquery.artDialog.js"></script>
+    <script src="/Areas/Web/Scripts/artDialog.iframeTools.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var userOrSms = 1;//(1.用户名密码登录 2.短信验证码登录)
+            if (top.location != location) {
+                top.location.href = location.href;
+            }
+        });
+        var sellerUrl = "/SellerAdmin";
+    </script>
+    <script type="text/javascript" src="//img1.zhongjiu.com.cn/NewSite/js/o_code.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/ncpc/nc.js?t=20190611084324"></script>
+    <script type="text/javascript">
+        var nc_token = ["FFFF0N00000000006716", (new Date()).getTime(), Math.random()].join(':');
+        var sig = '';
+        var csessionid = '';
+        var NC_Opt =
+            {
+                renderTo: "#pullcheckbtn",
+                appkey: "FFFF0N00000000006716",
+                scene: "nc_message",
+                token: nc_token,
+                customWidth: 318,
+                //trans: { "key1": "code0" },
+                //elementID: ["usernameID"],
+                is_Opt: 0,
+                language: "cn",
+                isEnabled: true,
+                timeout: 3000,
+                times: 5,
+                apimap: {
+                    // 'analyze': '//a.com/nocaptcha/analyze.jsonp',
+                    // 'get_captcha': '//b.com/get_captcha/ver3',
+                    // 'get_captcha': '//pin3.aliyun.com/get_captcha/ver3'
+                    // 'get_img': '//c.com/get_img',
+                    // 'checkcode': '//d.com/captcha/checkcode.jsonp',
+                    // 'umid_Url': '//e.com/security/umscript/3.2.1/um.js',
+                    // 'uab_Url': '//aeu.alicdn.com/js/uac/909.js',
+                    // 'umid_serUrl': 'https://g.com/service/um.json'
+                },
+                callback: function (data) {
+                    $('#checkCode_error').html("").hide();
+                    sig = data.sig;
+                    csessionid = data.csessionid;
+                    sendMobileCode();
+                }
+            }
+        var nc = new noCaptcha(NC_Opt)
+        nc.upLang('cn', {
+            _startTEXT: "向右滑动获取验证码",
+            _yesTEXT: "验证通过",
+            _error300: "哎呀，出错了，点击<a href=\"javascript:__nc.reset()\">刷新</a>再来一次",
+            _errorNetwork: "网络不给力，请<a href=\"javascript:__nc.reset()\">点击刷新</a>",
+        })
+
+        var resetNC = function () {
+            nc.reload();
+            sig = "";;
+            csessionid = "";
+        }
+    </script>
+
+    <script>
+        // 切换登录方式 201905
+        $(".toggleLoginBtn").text("短信验证码登录");
+        $(".loginMethodByCode").show();
+        $(".toggleLoginBtn").click(function () {
+            $('#checkCode_errorInfo').hide();
+            // 状态为1时，展示“账号密码登录”
+            var status = $(this).attr("data-status");
+            if (status != 1) {
+                $(this).text("短信验证码登录");
+                $(".loginMethodByCode").show();
+                $(".loginMethodByUser").hide();
+                $("#loginname").focus();
+                $(this).attr("data-status", 1);
+                userOrSms = 1;
+            } else {
+                $(this).text("账号密码登录");
+                $(".loginMethodByUser").show();
+                $(".loginMethodByCode").hide();
+                $("#loginnameTwo").focus();
+                $(this).attr("data-status", 0);
+                userOrSms = 2;
+            }
+        });
+    </script>
+</body>
+</html>

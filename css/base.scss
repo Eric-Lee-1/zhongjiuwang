@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+input,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  border: 0;
+}
+input {
+  outline: none;
+}
+header,
+nav,
+main,
+footer,
+section,
+article,
+figure,
+figcaption,
+aside {
+  display: block;
+}
+
+body {
+  background: #ccc;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #1f1f1f;
+}
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #ccc;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*===================css of public==================*/
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.w {
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+}
+.c {
+  height: 100%;
+  width: 1186px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../iconfont/iconfont.woff2') format('woff2'),
+      url('../iconfont/iconfont.woff') format('woff'),
+      url('../iconfont/iconfont.ttf') format('truetype'),
+      url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
