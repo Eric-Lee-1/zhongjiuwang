@@ -5,7 +5,7 @@ $COLOR_BLACK: #3e3a39;
 $COLOR_WHITE: #ffffff;
 $COLOR_HUI2: #3d4851;
 a:hover {
-  color: $COLOR_HUI;
+  color: $COLOR_RED;
 }
 header {
   height: 30px;
@@ -99,6 +99,7 @@ main {
           width: 60px;
           text-align: center;
           position: relative;
+          color: $COLOR_BLACK;
           li {
             width: 100%;
             height: 34px;
@@ -315,13 +316,11 @@ main {
       height: 550px;
       position: relative;
       padding-top: 36px;
-      background: yellow;
 
       .faj_head {
         height: 40px;
         line-height: 40px;
-        background: blue;
-        a {
+          a {
           display: inline-block;
           color: $COLOR_BLACK;
           margin: 0 10px;
@@ -422,7 +421,7 @@ main {
           }
         }
         .xiangqing {
-          width: 500px;
+          width: 480px;
           height: 480px;
           padding: 10px 40px;
           position: absolute;
@@ -448,7 +447,6 @@ main {
             li:nth-of-type(3) {
               height: 60px;
               line-height: 60px;
-              background: yellow;
               p {
                 display: inline-block;
               }
@@ -484,24 +482,24 @@ main {
               }
             }
           }
-          .xiangqing2{
-            width:100%;
+          .xiangqing2 {
+            width: 100%;
             border-bottom: 1px dotted #999;
-            li{
+            li {
               height: 35px;
               line-height: 35px;
               font-size: 14px;
-              span{
+              span {
                 color: $COLOR_RED;
               }
             }
           }
-          .xiangqing3{
-            div:first-of-type{
+          .xiangqing3 {
+            div:first-of-type {
               height: 40px;
               padding-top: 30px;
               font-size: 14px;
-              span{
+              span {
                 display: inline-block;
                 width: 30px;
                 height: 20px;
@@ -510,7 +508,7 @@ main {
                 text-align: center;
               }
             }
-            div:nth-of-type(2){
+            a:nth-of-type(1)  {
               width: 154px;
               height: 48px;
               line-height: 48px;
@@ -522,7 +520,7 @@ main {
               margin-right: 60px;
               float: left;
             }
-            div:nth-of-type(3){
+            a:nth-of-type(2) {
               width: 150px;
               height: 44px;
               line-height: 44px;
@@ -534,6 +532,90 @@ main {
               float: left;
               border: 2px solid #ff4d50;
             }
+          }
+        }
+        .qita {
+          width: 240px;
+          height: 480px;
+          padding: 10px 0;
+          position: absolute;
+          left: 940px;
+          top: 0;
+          z-index: 1;
+          li:nth-of-type(1) {
+            height: 80px;
+            border-top: 3px solid $COLOR_RED;
+            text-align: center;
+            img {
+              margin: 0 auto;
+            }
+            a {
+              color: $COLOR_BLACK;
+              font-size: 12px;
+              &:hover {
+                color: $COLOR_RED;
+              }
+            }
+          }
+          li:nth-of-type(2) {
+            height: 35px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            p {
+              height: 20px;
+              width: 40px;
+              text-align: center;
+              color: white;
+              font-size: 14px;
+              background: $COLOR_RED;
+              margin-left: 20px;
+              margin-right: 50px;
+            }
+            a:hover {
+              color: $COLOR_RED;
+            }
+          }
+          li:nth-of-type(3) {
+            height: 35px;
+            border-top: 1px dotted #ccc;
+            border-bottom: 1px dotted #ccc;
+            padding-top: 10px;
+            a {
+              font-size: 12px;
+              img {
+                display: inline-block;
+                margin: 0 10px;
+              }
+            }
+          }
+          li:nth-of-type(4) {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+          }
+          li:nth-of-type(5) {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            font-size: 12px;
+          }
+          li:nth-of-type(6) {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            font-size: 12px;
+          }
+          li:nth-of-type(7) {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            font-size: 12px;
+          }
+          li:nth-of-type(8) {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            font-size: 12px;
           }
         }
       }

@@ -1,0 +1,256 @@
+@import "./base.scss";
+$COLOR_HUI: #666666;
+$COLOR_RED: #e3393c;
+$COLOR_BLACK: #3e3a39;
+$COLOR_WHITE: #ffffff;
+$COLOR_HUI2: #3d4851;
+a{
+  color: #3d4851;
+}
+a:hover {
+  color: $COLOR_RED;
+}
+header {
+  height: 30px;
+  background: #f5f4f4;
+  font-size: 12px;
+  color: #3d4851;
+  .head_1 {
+    width: 240px;
+    height: 100%;
+    line-height: 30px;
+    span {
+      color: $COLOR_HUI;
+      em {
+        color: $COLOR_BLACK;
+        margin-left: 5px;
+      }
+      a {
+        color: $COLOR_RED;
+        margin-left: 10px;
+      }
+    }
+  }
+  .head_2 {
+    width: 150px;
+    height: 100%;
+    line-height: 30px;
+    div:first-of-type a {
+      padding: 0 10px;
+      border-right: 1px solid $COLOR_HUI;
+    }
+    div:last-of-type {
+      padding: 0 10px;
+    }
+  }
+  .head_3 {
+    height: 100%;
+    line-height: 30px;
+    ul {
+      li {
+        padding: 0 10px;
+        position: relative;
+        .lv2 {
+          display: none;
+          width: 100px;
+          background: $COLOR_WHITE;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          padding: 0 10px;
+          text-align: center;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          p {
+            color: $COLOR_RED;
+          }
+        }
+        &:hover {
+          background: $COLOR_WHITE;
+        }
+        &:hover .lv2 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+main {
+  background: $COLOR_WHITE;
+  color: #3d4851;
+  div.top {
+    height: 120px;
+    background: $COLOR_WHITE;
+    position: relative;
+    h1 {
+      margin: 10px 5px;
+    }
+    img.r {
+      margin-top: 1px;
+    }
+    h3 {
+      position: absolute;
+      bottom: 10px;
+    }
+  }
+  .cart {
+    border-collapse: collapse;
+    border: 1px solid #999999;
+    padding: 0;
+    thead {
+      height: 36px;
+      background: #eff2f5;
+      border-top: 1px solid #999999;
+      th {
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        text-align: center;
+      }
+      th:nth-of-type(1) {
+        width: 80px;
+        padding-left: 20px;
+        text-align: left;
+        input {
+          margin: 5px;
+        }
+      }
+      th:nth-of-type(2) {
+        width: 520px;
+      }
+      th:nth-of-type(3) {
+        width: 120px;
+      }
+      th:nth-of-type(4) {
+        width: 120px;
+      }
+      th:nth-of-type(5) {
+        width: 100px;
+      }
+    }
+    tbody {
+      tr{
+        height: 80px;
+        border-bottom: 1px solid #999999;
+      }
+      td{
+        float: left;
+        height: 60px;
+        line-height: 50px;
+        padding-top: 20px;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+        img{
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          display: inline-block;
+          border: 1px solid #999999;
+          left: 0;
+        }
+        span{
+          position: absolute;
+          left: 60px;
+          top: 5px;
+        }
+      }
+      td:nth-of-type(1) {
+        width: 80px;
+        padding-left: 20px;
+        text-align: left;
+       input {
+          margin: 5px;
+        } 
+      }
+      td:nth-of-type(2) {
+        width: 520px;
+      }
+      td:nth-of-type(3) {
+        width: 120px;
+      }
+      td:nth-of-type(4) {
+        width: 120px;
+      }
+      td:nth-of-type(5) {
+        width: 100px;
+      }
+    }
+    tfoot{
+      height: 40px;
+      background: #eff2f5;
+      border-top: 1px solid #999999;
+      th {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        text-align: center;
+      }
+      th:nth-of-type(1) {
+        width: 80px;
+        padding-left: 20px;
+        text-align: left;
+        input {
+          margin: 5px;
+        }
+      }
+      th:nth-of-type(2) {
+        width: 50px;
+      }
+      th:nth-of-type(3) {
+        width: 100px;
+      }
+      th:nth-of-type(4) {
+        width: 580px;
+        text-align: right;
+        padding-right: 8px;
+      }
+      th:nth-of-type(5) {
+        width: 130px;
+        div{
+          width: 120px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          background: #ff4d50;
+          border-radius: 5px;
+          margin:2px 5px;
+          color: white;
+        }
+      }
+
+    }
+  }
+  .bottom{
+    height: 300px;
+    a{
+      display: inline-block;
+      height: 43px;
+      line-height: 43px;
+    }
+    ul li{
+      float: left;
+      margin-right: 20px;
+      border: 1px solid #999999;
+
+      dt img{
+        width: 180px;
+        height: 180px;
+      }
+      dd{
+        width: 160px;
+        height: 20px;
+        line-height: 20px;
+        padding: 10px;
+        font-size: 13px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

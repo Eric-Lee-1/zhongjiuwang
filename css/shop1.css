@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-  color: #ccc;
+  color: #e3393c;
 }
 
 html,
@@ -107,7 +107,7 @@ body {
 }
 
 a:hover {
-  color: #666666;
+  color: #e3393c;
 }
 
 header {
@@ -224,6 +224,7 @@ main .top .search .search_to ul {
   width: 60px;
   text-align: center;
   position: relative;
+  color: #3e3a39;
 }
 
 main .top .search .search_to ul li {
@@ -481,13 +482,11 @@ main nav .goods {
   height: 550px;
   position: relative;
   padding-top: 36px;
-  background: yellow;
 }
 
 main nav .goods .faj_head {
   height: 40px;
   line-height: 40px;
-  background: blue;
 }
 
 main nav .goods .faj_head a {
@@ -604,7 +603,7 @@ main nav .goods .faj_main .fangdajing .shouchang p span img {
 }
 
 main nav .goods .faj_main .xiangqing {
-  width: 500px;
+  width: 480px;
   height: 480px;
   padding: 10px 40px;
   position: absolute;
@@ -637,7 +636,6 @@ main nav .goods .faj_main .xiangqing .xiangqing1 li:nth-of-type(2) {
 main nav .goods .faj_main .xiangqing .xiangqing1 li:nth-of-type(3) {
   height: 60px;
   line-height: 60px;
-  background: yellow;
 }
 
 main nav .goods .faj_main .xiangqing .xiangqing1 li:nth-of-type(3) p {
@@ -710,7 +708,7 @@ main nav .goods .faj_main .xiangqing .xiangqing3 div:first-of-type span {
   text-align: center;
 }
 
-main nav .goods .faj_main .xiangqing .xiangqing3 div:nth-of-type(2) {
+main nav .goods .faj_main .xiangqing .xiangqing3 a:nth-of-type(1) {
   width: 154px;
   height: 48px;
   line-height: 48px;
@@ -723,7 +721,7 @@ main nav .goods .faj_main .xiangqing .xiangqing3 div:nth-of-type(2) {
   float: left;
 }
 
-main nav .goods .faj_main .xiangqing .xiangqing3 div:nth-of-type(3) {
+main nav .goods .faj_main .xiangqing .xiangqing3 a:nth-of-type(2) {
   width: 150px;
   height: 44px;
   line-height: 44px;
@@ -734,6 +732,106 @@ main nav .goods .faj_main .xiangqing .xiangqing3 div:nth-of-type(3) {
   font-size: 20px;
   float: left;
   border: 2px solid #ff4d50;
+}
+
+main nav .goods .faj_main .qita {
+  width: 240px;
+  height: 480px;
+  padding: 10px 0;
+  position: absolute;
+  left: 940px;
+  top: 0;
+  z-index: 1;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(1) {
+  height: 80px;
+  border-top: 3px solid #e3393c;
+  text-align: center;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(1) img {
+  margin: 0 auto;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(1) a {
+  color: #3e3a39;
+  font-size: 12px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(1) a:hover {
+  color: #e3393c;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(2) {
+  height: 35px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(2) p {
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  background: #e3393c;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(2) a:hover {
+  color: #e3393c;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(3) {
+  height: 35px;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  padding-top: 10px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(3) a {
+  font-size: 12px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(3) a img {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(4) {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(5) {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(6) {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(7) {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+main nav .goods .faj_main .qita li:nth-of-type(8) {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 20px;
+  font-size: 12px;
 }
 
 aside {

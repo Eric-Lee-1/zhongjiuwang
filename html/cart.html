@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="all c">
+            <ul>
+                <li class="l head_1">
+                    <span>
+                        您好，欢迎来到
+                        <em class="s-name">中酒网！</em>
+                        <a href="/">去首页</a>
+                    </span>
+                </li>
+                <li class="l head_2">
+                    <div class="l"><a href="../html/login.html">请登录</a></div>
+                    <div class="l"><a href="../html/regist.html">免费注册</a></div>
+                </li>
+                <li class="r head_3">
+                    <ul>
+                        <li class="l">
+                            <a href=""> 我的中酒网</a>
+                            <ul class="lv2">
+                                <li><a href="">已买到的商品</a></li>
+                                <li><a href="">我关注的商品</a></li>
+                                <li><a href="">我关注的店铺</a></li>
+                            </ul>
+                        </li>
+                        <li class="l">
+                            <a href="../html/cart.html"> 购物车 <span>0</span> 件</a>
+                        </li>
+                        <li class="l">
+                            <a href=""> 微信端</a>
+                            <div class="lv2">
+                                <img src="http://img6.zhongjiu.cn/resourceb2b2c//Storage/Plat/Site/qrCode.png"
+                                    width="90" height="90">
+                            </div>
+                        </li>
+                        <li class="l">
+                            <a href=""> APP</a>
+                            <div class="lv2">
+                                <img width="90" height="90" src="http://img6.zhongjiu.cn/ResourceB2B2C/App/mob.jpg" />
+                                <h3>扫描二维码</h3>
+                                <p>下载手机客户端</p>
+                            </div>
+                        </li>
+                        <li class="l">
+                            <a href=""> 卖家中心</a>
+                        <li class="l">
+                            <a href=""> 订购热线：400-798-9999</a>
+                        </li>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="top w">
+            <h1 class="l">
+                <a href="../index.html"><img src="http://img6.zhongjiu.cn/resourceb2b2c//Storage/Plat/Site/logo.png"
+                        alt="Himall" /></a>
+            </h1>
+            <img src="../imgs/cart/course.PNG" alt="" class="r">
+            <h3>我的购物车</h3>
+        </div>
+        <table class="cart w">
+            <thead>
+                <tr>
+                    <th><label><input type="checkbox">全选</label></th>
+                    <th>商品</th>
+                    <th>商城价</th>
+                    <th>数量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="../imgs/cart/1_50.png" alt=""><span>53°赖茅传承蓝</span></td>
+                    <td>¥458.00</td>
+                    <td>1</td>
+                    <td><a href="#" class="del">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="../imgs/cart/2_50.png" alt=""><span>42度天佑德青稞酒小黑125ml×4</span></td>
+                    <td>¥119.00</td>
+                    <td>1</td>
+                    <td><a href="#" class="del">删除</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img src="../imgs/cart/3_50.png" alt=""><span>42度天佑德青稞酒福酒F6 500ml</span></td>
+                    <td>¥159.00</td>
+                    <td>1</td>
+                    <td><a href="#" class="del">删除</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th><label><input type="checkbox">全选</label></th>
+                    <th><a href="#" class="del">删除</a></th>
+                    <th><span class="zongshu">0</span>件商品</th>
+                    <th>总计（不含运费）：<span class="zhongjia">0</span></th>
+                    <th>
+                        <a href="">
+                            <div>去结算</div>
+                        </a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="bottom w">
+            <a href="">商品推荐</a>
+            <ul>
+                <li>
+                    <dl>
+                        <dt><img src="../imgs/cart/1_350.png" alt=""></dt>
+                        <dd>拉菲传奇波尔多 750ml（6瓶装）</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="../imgs/cart/2_350.png" alt=""></dt>
+                        <dd>52°白标西凤酒 500ml（6瓶装）</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="../imgs/cart/3_350.png" alt=""></dt>
+                        <dd>52°鸭溪窖-古酿 500ml （2瓶装）</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt><img src="../imgs/cart/4_350.png" alt=""></dt>
+                        <dd>52°贵州茅台集团 茅台醇原浆 V20 500ml （6瓶装）</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="../js/cart_ajax.js"></script>
+    <script src="../js/cart.js"></script>
